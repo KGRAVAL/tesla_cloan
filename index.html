@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-419">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           
+            Tesla.com
+        </title>
+        <link rel="icon" href="tlogo1.png" type="png">
+        <link rel="stylesheet" href="ind_style.css">        
+    </head>
+    <body>
+        <div class="header" id="header" >
+            <nav>
+                <a href="https://www.tesla.com/" target="new"> <img src="logo5.png" class="logo" alt="Tesla" width="5" height="45" ></a>
+                <ul>
+                    <li><a href="#" id="mds">Model S</a></li>
+                    <li><a href="#" id="md3">Model 3</a></li>
+                    <li><a href="#" id="mdx">Model X</a></li>
+                    <li><a href="#" id="mdy">Model Y</a></li>
+                </ul>
+                <a href="https://www.tesla.com/drive" class="btn" target="new"> Book Now</a>
+            </nav>
+
+            <div class="info">
+                <div id="infs">
+                    <h2>1.6 s</h2>
+                    <p>62 mph</p>
+                </div>
+                <div id="inf3">
+                    <h2>200 mph</h2>
+                    <p>Top speed</p>
+                </div>
+                <div id="infy">
+                    <h2>396 mi</h2>
+                    <p>Max Range</p>
+                </div>
+                <div class="line">
+                </div>
+                <div>
+                    <h2 id="modl">Model S</h2>
+                </div>
+            </div>
+        </div>
+        <script>
+            var header = document.getElementById("header");
+            var mdls = document.getElementById("mds");
+            var mdl3 = document.getElementById("md3");
+            var mdlx = document.getElementById("mdx");
+            var mdly = document.getElementById("mdy");
+            var modl = document.getElementById("modl");
+            var inf = document.getElementById("inf");
+       
+            mdls.onclick = function(){
+                header.style.backgroundImage="url(image-1.png)";
+                modl.innerHTML = "Model S"
+                inf.innerHTML = ""
+            }
+            mdl3.onclick = function(){
+                header.style.backgroundImage="url(image-2.png)";
+                modl.innerHTML = "Model 3"
+            }
+            mdlx.onclick = function(){
+                header.style.backgroundImage="url(image-3.png)";
+                modl.innerHTML = "Model x"
+            }
+            mdly.onclick = function(){
+                header.style.backgroundImage="url(image-4.png)";
+                modl.innerHTML = "Model y"
+            }
+        </script>
+
+    </body>
+</html>
